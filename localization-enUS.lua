@@ -14,7 +14,7 @@ CANCEL_REASON_TEXT = {
 	unknown = "unknown reason",
 }
 
-TRADE_LOG_SUCCESS_NO_EXCHANGE = "Trade with [%t] was COMPLETED, but no exchange made.";
+TRADE_LOG_SUCCESS = "Trade with [%t] was COMPLETED. Thank you for using Starlight Boosting! Discord.gg/SLB ";
 TRADE_LOG_SUCCESS = "Trade with [%t] was COMPLETED.";
 TRADE_LOG_DETAIL = "Detail";
 TRADE_LOG_CANCELLED = "Trade with [%t] was CANCELLED: %r.";
