@@ -6,7 +6,7 @@
 ## SavedVariablesPerCharacter: TradeLog_TradesHistory, TradeLog_Announce_Checked, TradeLog_AnnounceChannel
 ## X-Website: Discord.gg/SLB
 ## LoadOnDemand: 0
-## DefualtState: enabled
+## DefaultState: enabled
 
 Libs\LibDBIcon-1.0.xml
 
