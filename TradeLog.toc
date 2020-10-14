@@ -1,16 +1,13 @@
-﻿## Interface: 80000
-## LoadOnDemand: 0
+﻿## Interface: 90001
+## Author: Starlight Boosting Dev Team
 ## Title: TradeLog
-## Notes: trade history log, recent trade list by Warbaby@163.com
-## Notes-zhCN: 交易记录 by Warbaby (三月十二@聖光之願<冰封十字軍>)
+## Notes: trade history log, recent trade list
 ## SavedVariablesPerCharacter: TradeLog_TradesHistory, TradeLog_Announce_Checked, TradeLog_AnnounceChannel
-
+## X-Website: Discord.gg/SLB
+## LoadOnDemand: 0
 Libs\LibDBIcon-1.0.xml
 
 localization-enUS.lua
-localization-zhCN.lua
-localization-zhTW.lua
-localization-koKR.lua
 TradeLog.lua
 RecentTradeFrame.xml
 TradeLogFrame.xml
