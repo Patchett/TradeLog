@@ -717,42 +717,12 @@
 				</Scripts>
 			</Button>
 
-			<Slider name="TradeLogFrameScaleSlider" inherits="OptionsSliderTemplate">
-				<Anchors>
-					<Anchor point="LEFT" relativeTo="TradeListKeepOnlyTodayButton" relativePoint="RIGHT">
-						<Offset>
-							<AbsDimension x="40" y="0"/>
-						</Offset>
-					</Anchor>
-				</Anchors>
-				<Scripts>
-					<OnLoad>
-						local string = getglobal(self:GetName().."Text");
-						--OptionsFrame_EnableSlider(self);
-						local name = self:GetName();
-						getglobal(name.."Thumb"):Show();
-						getglobal(name.."Text"):SetVertexColor(NORMAL_FONT_COLOR.r , NORMAL_FONT_COLOR.g , NORMAL_FONT_COLOR.b);
-						getglobal(name.."Low"):SetVertexColor(HIGHLIGHT_FONT_COLOR.r, HIGHLIGHT_FONT_COLOR.g, HIGHLIGHT_FONT_COLOR.b);
-						getglobal(name.."High"):SetVertexColor(HIGHLIGHT_FONT_COLOR.r, HIGHLIGHT_FONT_COLOR.g, HIGHLIGHT_FONT_COLOR.b);
-						
-						self:SetMinMaxValues(0.8, 1.5);
-						self:SetValueStep(0.1);
-						self:SetValue(1);
-						string:SetText(TRADE_LIST_SCALE);
-					</OnLoad>
-					<OnValueChanged>
-						TradeLogFrame:SetScale(self:GetValue());								
-					</OnValueChanged>
-				</Scripts>
-			</Slider>
-
-
 			<CheckButton name="TradeListOnlyCompleteCB" inherits="OptionsCheckButtonTemplate">
 				<Size>
 					<AbsDimension x="26" y="26"/>
 				</Size>
 				<Anchors>
-					<Anchor point="LEFT" relativeTo="TradeLogFrameScaleSlider" relativePoint="RIGHT">
+					<Anchor point="LEFT" relativeTo="TradeListKeepOnlyTodayButton" relativePoint="RIGHT">
 						<Offset>
 							<AbsDimension x="30" y="0"/>
 						</Offset>
