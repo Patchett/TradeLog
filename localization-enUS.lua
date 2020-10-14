@@ -15,7 +15,6 @@ CANCEL_REASON_TEXT = {
 }
 
 TRADE_LOG_SUCCESS = "Trade with [%t] was COMPLETED. Thank you for using Starlight Boosting! Discord.gg/SLB ";
-TRADE_LOG_SUCCESS = "Trade with [%t] was COMPLETED.";
 TRADE_LOG_DETAIL = "Detail";
 TRADE_LOG_CANCELLED = "Trade with [%t] was CANCELLED: %r.";
 TRADE_LOG_FAILED = "Trade with [%t] was FAILED: %r.";
