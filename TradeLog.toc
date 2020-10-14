@@ -8,19 +8,9 @@
 ## LoadOnDemand: 0
 ## DefualtState: enabled
 
-## libs ##
-Libs\CallbackHandler-1.0.Lua
-Libs\LibDataBroker-1.1.Lua
-Libs\LibStub.Lua
-LibDBIcon-1.0.Lua
-LibDBIcon-1.0.xml
+Libs\LibDBIcon-1.0.xml
 
 localization-enUS.lua
 TradeLog.lua
-RecentTradeFrame.lua
 RecentTradeFrame.xml
-Scrolltrack.png
-TradeLogFrame.lua
 TradeLogFrame.xml
-TradeLog.lua
-TradeLog.xml
