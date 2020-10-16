@@ -663,11 +663,10 @@
 		</HighlightTexture>
 	</Button>
 
-<!-- ======================================== TradeListFrame Main frame ================================ -->
 	<Frame name="TradeListFrame" parent="UIParent" movable="true" enableMouse="true" hidden="true" inherits="UIPanelDialogTemplate">
 		<TitleRegion setAllPoints="true"/>
 		<Size>
-			<AbsDimension x="543" y="300"/>
+			<AbsDimension x="543" y="330"/>
 		</Size>
 		<Anchors>
 			<Anchor point="TOPLEFT">
@@ -690,12 +689,12 @@
 
 			<Button name="TradeListKeepOnlyTodayButton" inherits="UIPanelButtonTemplate" Text="TRADE_LIST_CLEAR_HISTORY">
 				<Size>
-					<AbsDimension x="90" y="15"/>
+					<AbsDimension x="90" y="14"/>
 				</Size>
 				<Anchors>
 					<Anchor point="TOPLEFT">
 						<Offset>
-							<AbsDimension x="10" y="-8"/>
+							<AbsDimension x="15" y="-8"/>
 						</Offset>
 					</Anchor>
 				</Anchors>
@@ -708,12 +707,12 @@
 
 			<CheckButton name="TradeListOnlyCompleteCB" inherits="OptionsCheckButtonTemplate">
 				<Size>
-					<AbsDimension x="18" y="18"/>
+					<AbsDimension x="22" y="22"/>
 				</Size>
 				<Anchors>
 					<Anchor point="LEFT" relativeTo="TradeListKeepOnlyTodayButton" relativePoint="RIGHT">
 						<Offset>
-							<AbsDimension x="290" y="0"/>
+							<AbsDimension x="30" y="0"/>
 						</Offset>
 					</Anchor>
 				</Anchors>
@@ -738,7 +737,7 @@
 				</Anchors>
 				<Scripts>
 					<OnLoad>
-						WhoFrameColumn_SetWidth(self, 137);
+						WhoFrameColumn_SetWidth(self, 138);
 					</OnLoad>
 				</Scripts>
 			</Button>
@@ -794,7 +793,7 @@
 				</Anchors>
 				<Scripts>
 					<OnLoad>
-						WhoFrameColumn_SetWidth(self, 70);
+						WhoFrameColumn_SetWidth(self, 60);
 					</OnLoad>
 				</Scripts>
 			</Button>
@@ -961,7 +960,7 @@
 					</Anchor>
 					<Anchor point="BOTTOMRIGHT">
 						<Offset>
-							<AbsDimension x="-29" y="10"/>
+							<AbsDimension x="-31" y="9"/>
 						</Offset>
 					</Anchor>
 				</Anchors>

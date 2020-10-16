@@ -19,8 +19,8 @@ TRADE_LOG_DETAIL = "Detail";
 TRADE_LOG_CANCELLED = "Trade with [%t] was CANCELLED: %r.";
 TRADE_LOG_FAILED = "Trade with [%t] was FAILED: %r.";
 TRADE_LOG_FAILED_NO_TARGET = "Trade FAILED: %r.";
-TRADE_LOG_HANDOUT = "Gave";
-TRADE_LOG_RECEIVE = "Received";
+TRADE_LOG_HANDOUT = "lost";
+TRADE_LOG_RECEIVE = "got";
 TRADE_LOG_ENCHANT = "enchant";
 TRADE_LOG_ITEM_NUMBER = "%d items";
 TRADE_LOG_CHANNELS = {
@@ -55,15 +55,15 @@ RECENT_TRADE_TIME = "%d %s ago"
 RECENT_TRADE_TITLE = "Recent Trade"
 
 -- ===================== Part for TradeList ==================
-TRADE_LIST_CLEAR_HISTORY = "Clear"
+TRADE_LIST_CLEAR_HISTORY = "CLEAR"
 TRADE_LIST_SCALE = "Detail Scale"
 TRADE_LIST_FILTER = "Completed Only"
 
 TRADE_LIST_HEADER_WHEN = "Time"
 TRADE_LIST_HEADER_WHO = "Recipent"
 TRADE_LIST_HEADER_WHERE = "Location"
-TRADE_LIST_HEADER_SEND = "Gave"
-TRADE_LIST_HEADER_RECEIVE = "Received"
+TRADE_LIST_HEADER_SEND = "Lost"
+TRADE_LIST_HEADER_RECEIVE = "Got"
 TRADE_LIST_HEADER_RESULT = "Result"
 
 TRADE_LIST_CLEAR_CONFIRM = "Records before today will be totally cleared!";
