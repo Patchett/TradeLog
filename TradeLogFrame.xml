@@ -663,20 +663,8 @@
 		</HighlightTexture>
 	</Button>
 
-	<Frame name="TradeListFrame" parent="UIParent" movable="true" enableMouse="true" hidden="true">
+	<Frame name="TradeListFrame" parent="UIParent" movable="true" enableMouse="true" hidden="true" inherits="UIPanelDialogTemplate">
 		<TitleRegion setAllPoints="true"/>
-		<Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
-			<EdgeSize>
-				<AbsValue val="16"/>
-			</EdgeSize>
-			<TileSize>
-				<AbsValue val="16"/>
-			</TileSize>
-			<BackgroundInsets>
-				<AbsInset left="3" right="3" top="3" bottom="3"/>
-			</BackgroundInsets>
-            <Color r="0" g="0" b="0"/>
-		</Backdrop>
 		<Size>
 			<AbsDimension x="543" y="330"/>
 		</Size>
@@ -701,12 +689,12 @@
 
 			<Button name="TradeListKeepOnlyTodayButton" inherits="UIPanelButtonTemplate" Text="TRADE_LIST_CLEAR_HISTORY">
 				<Size>
-					<AbsDimension x="90" y="26"/>
+					<AbsDimension x="90" y="14"/>
 				</Size>
 				<Anchors>
 					<Anchor point="TOPLEFT">
 						<Offset>
-							<AbsDimension x="15" y="-18"/>
+							<AbsDimension x="15" y="-8"/>
 						</Offset>
 					</Anchor>
 				</Anchors>
@@ -719,7 +707,7 @@
 
 			<CheckButton name="TradeListOnlyCompleteCB" inherits="OptionsCheckButtonTemplate">
 				<Size>
-					<AbsDimension x="26" y="26"/>
+					<AbsDimension x="22" y="22"/>
 				</Size>
 				<Anchors>
 					<Anchor point="LEFT" relativeTo="TradeListKeepOnlyTodayButton" relativePoint="RIGHT">
@@ -743,7 +731,7 @@
 				<Anchors>
 					<Anchor point="TOPLEFT">
 						<Offset>
-							<AbsDimension x="8" y="-55"/>
+							<AbsDimension x="8" y="-25"/>
 						</Offset>
 					</Anchor>
 				</Anchors>
