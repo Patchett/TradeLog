@@ -1,4 +1,4 @@
-print("SLB trade log Loaded Version 0.2.3")
+print("SLB trade log Loaded Version 0.2.4")
 
 SLASH_TRADELOGSHOW1 = "/tbtdebug";
 SlashCmdList["TRADELOGSHOW"] = function(msg)
@@ -43,14 +43,14 @@ function TradeLog_OnLoad(self)
     TBT_AnnounceChannelDropDown:SetScript("OnShow", function(self) self:SetFrameLevel(TradeFrame:GetFrameLevel()) end)
 
 	local cb = CreateFrame("CheckButton", "TBT_AnnounceCB", TradeFrame, "OptionsCheckButtonTemplate");
-	cb:SetPoint("BOTTOMLEFT", "TradeFrame", "BOTTOMLEFT", 16, 0);
-	cb:SetWidth(26);
-	cb:SetHeight(26);
+	cb:SetPoint("BOTTOMLEFT", "TradeFrame", "BOTTOMLEFT", 10, 5);
+	cb:SetWidth(20);
+	cb:SetHeight(20);
 	TBT_AnnounceCBText:SetText(TRADE_LOG_ANNOUNCE);
 	cb.tooltipText = TRADE_LOG_ANNOUNCE_TIP;
 	cb:SetScript("OnClick", function(self) TradeLog_Announce_Checked = self:GetChecked()and true or false; end);
 
-    menu:SetPoint('BOTTOMLEFT', cb, 50, -3)
+    menu:SetPoint('BOTTOMLEFT', cb, 60, -6)
 
 	self:RegisterEvent("VARIABLES_LOADED");
 	self:RegisterEvent("TRADE_SHOW");
