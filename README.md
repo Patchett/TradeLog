@@ -16,11 +16,14 @@ Ingame command
 Updates
 10/16/2020
 Fixed background not showing and adjusted location of frames to match.
-changed word "got" to "Received"
-changed word "Lose" to "Gave"
-added notes in code
-removed blank space at bottom of frame
-Trade history window completed!
+Changed word "got" to "Received".
+Changed word "Lose" to "Gave".
+Added notes in code.
+Removed blank space at bottom of frame.
+Trade history window completed!.
+Changelog removed and moved here.
+Removed un needed image file.
+Fixed position of Notify check box and dropdown menu on trade window.
 
 10/12/20
 - Whisper text changed on completion of a trade to "Trade with [%t] was COMPLETED. Thank you for using Starlight Boosting! Discord.gg/SLB".
