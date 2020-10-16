@@ -955,7 +955,7 @@
 				<Anchors>
 					<Anchor point="TOPLEFT">
 						<Offset>
-							<AbsDimension x="0" y="-79"/>
+							<AbsDimension x="0" y="-30"/>
 						</Offset>
 					</Anchor>
 					<Anchor point="BOTTOMRIGHT">
