@@ -231,7 +231,7 @@ function TradeListScrollFrame_Update(self)
     end
 end
 
-StaticPopupDialogs["TRADE_LOG_CLEAR_HISTORY"] = {preferredIndex = 3,
+StaticPopupDialogs["TRADE_LOG_CLEAR_HISTORY"] = {preferredIndex = 3, --Clear confermation window
     text = "CLEAR TRADE HISTORY",
     button1 = ACCEPT,
     button2 = CANCEL,
