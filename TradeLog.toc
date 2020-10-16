@@ -1,12 +1,12 @@
 ﻿## Interface: 90001
 ## Author: Starlight Boosting Dev Team, [Dev] Gingertwirl
-## Version: 0.2.2
+## Version: 0.2.3
 ## Title: TradeLog
 ## Notes: Trade history log, Recent trade list for Starlight Boosting advertisers
 ## SavedVariablesPerCharacter: TradeLog_TradesHistory, TradeLog_Announce_Checked, TradeLog_AnnounceChannel
 ## X-Website: Discord.gg/SLB
 ## LoadOnDemand: 0
-## DefualtState: enabled
+## DefaultState: enabled
 
 Libs\LibDBIcon-1.0.xml
 
