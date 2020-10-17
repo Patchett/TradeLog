@@ -14,9 +14,11 @@ Ingame command
 /TradeLog Icon - turns radial buttion on/off
 
 Updates
+
 10/17/2020
 Fixed missing background in detailed trade
 adjusted position of elements in the window
+
 10/16/2020
 Fixed background not showing and adjusted the location of frames to match.
 Changed word "got" to "Received".
