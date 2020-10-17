@@ -47,7 +47,6 @@
 		</Size>
 		<Layers>
 			<Layer level="BACKGROUND">
-
 				<Texture name="$parentS11e" file="Interface\Buttons\UI-EmptySlot">
 					<Size>
 						<AbsDimension x="2" y="2"/>
@@ -84,7 +83,6 @@
 						</Anchor>
 					</Anchors>
 				</Texture>
-
 				<Texture name="$parentNameFrame" file="Interface\QuestFrame\UI-QuestItemNameFrame">
 					<Size>
 						<AbsDimension x="100" y="41"/>
@@ -97,7 +95,6 @@
 						</Anchor>
 					</Anchors>
 				</Texture>
-
 				<FontString name="$parentName" inherits="GameFontNormalSmall" text="Item Name" justifyH="LEFT">
 					<Size>
 						<AbsDimension x="80" y="24"/>
@@ -110,8 +107,6 @@
 						</Anchor>
 					</Anchors>
 				</FontString>
-
-
 			</Layer>
 		</Layers>
 	</Frame>
@@ -194,21 +189,9 @@
 		</Frames>
 	</Frame>
 
-
-	<Frame name="TradeLogFrame" parent="UIParent" movable="true" toplevel="true" enableMouse="true" hidden="true">
+<!-- ======================================== Window for details of a trade ======================================== -->
+	<Frame name="TradeLogFrame" parent="UIParent" movable="true" toplevel="true" enableMouse="true" hidden="true" inherits="UIPanelDialogTemplate">
 		<TitleRegion setAllPoints="true"/>
-		<Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
-			<EdgeSize>
-				<AbsValue val="16"/>
-			</EdgeSize>
-			<TileSize>
-				<AbsValue val="16"/>
-			</TileSize>
-			<BackgroundInsets>
-				<AbsInset left="3" right="3" top="3" bottom="3"/>
-			</BackgroundInsets>
-			<Color r="0" g="0" b="0"/>
-		</Backdrop>
 		<Size>
 			<AbsDimension x="260" y="270"/>
 		</Size>
@@ -219,11 +202,6 @@
 				</Offset>
 			</Anchor>
 		</Anchors>
-<!--
-		<HitRectInsets>
-			<AbsInset left="0" right="35" top="0" bottom="72"/>
-		</HitRectInsets>
--->
 		<Layers>
 			<Layer level="ARTWORK">
 				<FontString name="TradeLogFramePlayerNameText" inherits="GameFontNormal" justifyH="LEFT"  text="playerName">
@@ -233,7 +211,7 @@
 					<Anchors>
 						<Anchor point="TOPLEFT">
 							<Offset>
-								<AbsDimension x="10" y="-10"/>
+								<AbsDimension x="16" y="-9"/>
 							</Offset>
 						</Anchor>
 					</Anchors>
@@ -272,7 +250,7 @@
 				<Anchors>
 					<Anchor point="TOPRIGHT">
 						<Offset>
-							<AbsDimension x="-1" y="0"/>
+							<AbsDimension x="3" y="2"/>
 						</Offset>
 					</Anchor>
 				</Anchors>
@@ -312,7 +290,7 @@
 				<Anchors>
 					<Anchor point="TOPRIGHT" relativeTo="TradeLogPlayerMoneyFrame" relativePoint="BOTTOMRIGHT">
 						<Offset>
-							<AbsDimension x="-10" y="-6"/>
+							<AbsDimension x="-14" y="-6"/>
 						</Offset>
 					</Anchor>
 				</Anchors>
@@ -705,7 +683,6 @@
 					</OnClick>
 				</Scripts>
 			</Button>
-
 			<CheckButton name="TradeListOnlyCompleteCB" inherits="OptionsCheckButtonTemplate">
 				<Size>
 					<AbsDimension x="18" y="18"/>
