@@ -1,4 +1,4 @@
-print("SLB trade log Loaded Version 0.2.4")
+print("SLB Trade Log Loaded Version 1.0.0")
 
 SLASH_TRADELOGSHOW1 = "/tbtdebug";
 SlashCmdList["TRADELOGSHOW"] = function(msg)

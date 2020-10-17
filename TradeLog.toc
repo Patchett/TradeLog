@@ -1,6 +1,6 @@
 ﻿## Interface: 90001
 ## Author: Starlight Boosting Dev Team, [Dev] Gingertwirl
-## Version: 0.2.4
+## Version: 1.0.0
 ## Title: TradeLog
 ## Notes: Trade history log, Recent trade list for Starlight Boosting advertisers
 ## SavedVariablesPerCharacter: TradeLog_TradesHistory, TradeLog_Announce_Checked, TradeLog_AnnounceChannel
