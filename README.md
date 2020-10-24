@@ -6,7 +6,7 @@ This addon is has been modified for use in Starlight Boosting original creator T
 
 Install Instructions
 1. Download file from https://github.com/starlightboosting/TradeLog
-2. Right-click rename folder from "TradeLog-master" to "TradeLog" Remove "-master" from the folder name.
+2. Right-click rename folder from "Tradelog-main" to "Tradelog" Remove "-main" from the folder name.
 3. Place in World of Warcraft/_retail_/interface/AddOns/.
 4. Once installed open a trade window and click Notify on the bottom left of the trade window.
 
@@ -14,6 +14,7 @@ Ingame command
 /TradeLog Icon - turns radial buttion on/off
 
 Updates
+
 10/24/2020
 Fixed background on recent trade frame next to trade window
 adjusted position of elements in the window
@@ -21,9 +22,11 @@ fixed bug in background that was sending a error in bug stack.
 fixed bug in scrollbar that was sending a error in bug stack.
 0 erros in bugs stack from addon now.
 
+
 10/17/2020
 Fixed missing background in detailed trade
 adjusted position of elements in the window
+
 10/16/2020
 Fixed background not showing and adjusted the location of frames to match.
 Changed word "got" to "Received".
