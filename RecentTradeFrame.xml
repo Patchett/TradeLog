@@ -55,20 +55,9 @@
 			</Anchors>
 		</HighlightTexture>
 	</Button>
-
-	<Frame name="RecentTradeFrame" parent="TradeFrame" hidden="false">
+<!-- recent trade frame right of trade window -->
+	<Frame name="RecentTradeFrame" parent="TradeFrame" inherits="UIPanelDialogTemplate" hidden="false">
 		<TitleRegion setAllPoints="true"/>
-		<Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
-			<EdgeSize>
-				<AbsValue val="16"/>
-			</EdgeSize>
-			<TileSize>
-				<AbsValue val="16"/>
-			</TileSize>
-			<BackgroundInsets>
-				<AbsInset left="5" right="5" top="5" bottom="5"/>
-			</BackgroundInsets>
-		</Backdrop>
 		<Size>
 			<AbsDimension x="180" y="451"/>
 		</Size>
@@ -101,7 +90,7 @@
 				<Anchors>
 					<Anchor point="TOPRIGHT">
 						<Offset>
-							<AbsDimension x="3" y="3"/>
+							<AbsDimension x="2" y="2"/>
 						</Offset>
 					</Anchor>
 				</Anchors>
@@ -188,9 +177,6 @@
 				<!--RecentTradeFrame_UpdateList(GetUnitName("NPC", true):gsub(" %- ", "-"))-->
 				RecentTradeFrame_UpdateList(GetUnitName("NPC", true))
 			</OnEvent>
-			<OnShow>
-				self:SetBackdropColor(0,0,0);
-			</OnShow>
 		</Scripts>
 	</Frame>
 

@@ -14,6 +14,13 @@ Ingame command
 /TradeLog Icon - turns radial buttion on/off
 
 Updates
+10/24/2020
+Fixed background on recent trade frame next to trade window
+adjusted position of elements in the window
+fixed bug in background that was sending a error in bug stack.
+fixed bug in scrollbar that was sending a error in bug stack.
+0 erros in bugs stack from addon now.
+
 10/17/2020
 Fixed missing background in detailed trade
 adjusted position of elements in the window
