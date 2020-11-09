@@ -14,18 +14,21 @@ Ingame command
 /TradeLog Icon - turns radial buttion on/off
 
 Updates
+11/09/2020
+Added current Relm displayed when logging on in chat window.
+Removed dropdown and forces whisper when notify is checked.
 
 10/24/2020
-Fixed background on recent trade frame next to trade window
-adjusted position of elements in the window
-fixed bug in background that was sending a error in bug stack.
-fixed bug in scrollbar that was sending a error in bug stack.
+Fixed background on recent trade frame next to trade window.
+Adjusted position of elements in the window.
+Fixed bug in background that was sending a error in bug stack.
+Fixed bug in scrollbar that was sending a error in bug stack.
 0 erros in bugs stack from addon now.
 
 
 10/17/2020
-Fixed missing background in detailed trade
-adjusted position of elements in the window
+Fixed missing background in detailed trade.
+Adjusted position of elements in the window.
 
 10/16/2020
 Fixed background not showing and adjusted the location of frames to match.
@@ -39,4 +42,4 @@ Removed unneeded image file.
 Fixed position of Notify check box and dropdown menu on the trade window.
 
 10/12/20
-- Whisper text changed on completion of a trade to "Trade with [%t] was COMPLETED. Thank you for using Starlight Boosting! Discord.gg/SLB".
+Whisper text changed on completion of a trade to "Trade with [%t] was COMPLETED. Thank you for using Starlight Boosting! Discord.gg/SLB".

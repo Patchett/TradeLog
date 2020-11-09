@@ -36,7 +36,7 @@ function TradeLogFrame_CreateMinimapButton()
     TradeLog_TradesHistory.minimapPos = TradeLog_TradesHistory.minimapPos or 338
     LibDBIcon:Register("TradeLog", ldb, TradeLog_TradesHistory);
     if ( TradeLog_TradesHistory.hideMinimapIcon ) then LibDBIcon:Hide("TradeLog") end
-
+-- slash commands for addon --
     SLASH_TRADELOGICON1 = "/tradelog";
     SlashCmdList["TRADELOGICON"] = function(msg)
         if  ( msg~="icon" ) then

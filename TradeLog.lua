@@ -1,4 +1,7 @@
-print("SLB Trade Log Loaded Version 1.0.1")
+print("SLB Trade Log Loaded Version 1.0.2")
+
+local realmName = GetRealmName()
+DEFAULT_CHAT_FRAME:AddMessage("You are currently on realm: " .. realmName)
 
 SLASH_TRADELOGSHOW1 = "/tbtdebug";
 SlashCmdList["TRADELOGSHOW"] = function(msg)
@@ -37,10 +40,6 @@ function TradeLog_CreateNewTrade()
 end
 
 function TradeLog_OnLoad(self)
-	local menu = CreateFrame("Frame", "TBT_AnnounceChannelDropDown", TradeFrame, "UIDropDownMenuTemplate");
-	-- menu:SetPoint("BOTTOMLEFT", "TradeFrame", "BOTTOMLEFT", 80, 49);
-	UIDropDownMenu_SetWidth(TBT_AnnounceChannelDropDown, 62, 3);
-    TBT_AnnounceChannelDropDown:SetScript("OnShow", function(self) self:SetFrameLevel(TradeFrame:GetFrameLevel()) end)
 
 	local cb = CreateFrame("CheckButton", "TBT_AnnounceCB", TradeFrame, "OptionsCheckButtonTemplate");
 	cb:SetPoint("BOTTOMLEFT", "TradeFrame", "BOTTOMLEFT", 10, 5);
@@ -50,9 +49,7 @@ function TradeLog_OnLoad(self)
 	cb.tooltipText = TRADE_LOG_ANNOUNCE_TIP;
 	cb:SetScript("OnClick", function(self) TradeLog_Announce_Checked = self:GetChecked()and true or false; end);
 
-    menu:SetPoint('BOTTOMLEFT', cb, 60, -6)
-
-	self:RegisterEvent("VARIABLES_LOADED");
+   	self:RegisterEvent("VARIABLES_LOADED");
 	self:RegisterEvent("TRADE_SHOW");
 	self:RegisterEvent("TRADE_CLOSED");
 	self:RegisterEvent("TRADE_REQUEST_CANCEL");
@@ -105,10 +102,7 @@ function TradeLog_OnEvent(self, event, arg1, arg2, ...)
 			v.id = v.id or k 
 		end
 
-		TradeLog_AnnounceChannel = TradeLog_AnnounceChannel or "WHISPER";
-
-		UIDropDownMenu_Initialize(TBT_AnnounceChannelDropDown, TBT_AnnounceChannelDropDown_Initialize);
-		UIDropDownMenu_SetSelectedValue(TBT_AnnounceChannelDropDown, TradeLog_AnnounceChannel);
+		TradeLog_AnnounceChannel = "WHISPER";
 
 		if(TradeLog_Announce_Checked) then TBT_AnnounceCB:SetChecked(1); end;
 
