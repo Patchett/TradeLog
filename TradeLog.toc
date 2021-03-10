@@ -1,4 +1,4 @@
-﻿## Interface: 90001
+﻿## Interface: 90002
 ## Author: Starlight Boosting Dev Team, [Dev] Gingertwirl
 ## Version: 1.0.2
 ## Title: TradeLog
