@@ -14,6 +14,10 @@ Ingame command
 /TradeLog Icon - turns radial buttion on/off
 
 Updates
+
+06/29/2021
+Updated interface number to match patch 9.1
+
 11/09/2020
 Added current Relm displayed when logging on in chat window.
 Removed dropdown and forces whisper when notify is checked.
