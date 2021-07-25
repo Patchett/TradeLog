@@ -13,8 +13,10 @@ Install Instructions
 Ingame command 
 /TradeLog Icon - turns radial buttion on/off
 
-Updates
-
+Updates:
+07/25/2021 
+Working on package release for WoWUP link updading.
+ 
 06/29/2021
 Updated interface number to match patch 9.1
 
