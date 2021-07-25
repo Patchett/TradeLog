@@ -1,4 +1,4 @@
-print("SLB Trade Log Loaded Version 1.0.2")
+print("SLB Trade Log Loaded Version 1.1.0")
 
 local realmName = GetRealmName()
 DEFAULT_CHAT_FRAME:AddMessage("You are currently on realm: " .. realmName)
