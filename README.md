@@ -11,10 +11,11 @@ Install Instructions
 4. Once installed open a trade window and click Notify on the bottom left of the trade window.
 
 Wow up Instructions
-1. Open WoWup
-2. Click install from URL
+1. Open WoWup.
+2. Click install from URL.
 3. Paste https://github.com/starlightboosting/tradelog/releases
-4. Click import
+4. Click import.
+5. Click install.
 
 Ingame command 
 /TradeLog Icon - turns radial buttion on/off
