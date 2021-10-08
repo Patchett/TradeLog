@@ -1,4 +1,4 @@
-print("SLB Trade Log Loaded Version 1.1.0")
+print("SLB Trade Log Loaded Version 1.1.1")
 
 local realmName = GetRealmName()
 DEFAULT_CHAT_FRAME:AddMessage("You are currently on realm: " .. realmName)
@@ -65,7 +65,7 @@ end
 
 function TradeLog_OnEvent(self, event, arg1, arg2, ...)
 	if (event=="UI_ERROR_MESSAGE") then
-		if(arg2==ERR_TRADE_BAG_FULL or arg2==ERR_TRADE_MAX_COUNT_EXCEEDED or arg2==ERR_TRADE_TARGET_BAG_FULL or arg2==ERR_TRADE_TARGET_MAX_COUNT_EXCEEDED) then
+		if(arg2==ERR_TRADE_BAG_FULL or arg2==ERR_TOO_MUCH_GOLD or arg2==ERR_TRADE_MAX_COUNT_EXCEEDED or arg2==ERR_TRADE_TARGET_BAG_FULL or arg2==ERR_TRADE_TARGET_MAX_COUNT_EXCEEDED) then
 			curr().result = "error";
 			curr().reason=arg2;
 			TradeLog_LogTradeAndReset();

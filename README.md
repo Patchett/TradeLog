@@ -10,10 +10,19 @@ Install Instructions
 3. Place in World of Warcraft/_retail_/interface/AddOns/.
 4. Once installed open a trade window and click Notify on the bottom left of the trade window.
 
+Wow up Instructions
+1. Open WoWup
+2. Click install from URL
+3. Paste https://github.com/starlightboosting/tradelog/releases
+4. Click import
+
 Ingame command 
 /TradeLog Icon - turns radial buttion on/off
 
 Updates:
+10/07/2020
+Fixed and issues that no error was showing when trading someone gold that would put them over the gold cap of that character. Sepcial thanks to Kortlexx for the help on this one.
+
 07/25/2021 
 Working on package release for WoWUP link updading.
  
