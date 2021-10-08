@@ -5,8 +5,8 @@ Discord.gg/SLB
 This addon is has been modified for use in Starlight Boosting original creator TradeLog by warbaby for BFA.
 
 Install Instructions
-1. Download file from https://github.com/starlightboosting/TradeLog
-2. Right-click rename folder from "Tradelog-main" to "Tradelog" Remove "-main" from the folder name.
+1. Download file from https://github.com/starlightboosting/tradelog/releases
+2. Click on "tradelog.zip" under assets.
 3. Place in World of Warcraft/_retail_/interface/AddOns/.
 4. Once installed open a trade window and click Notify on the bottom left of the trade window.
 
@@ -16,7 +16,8 @@ Wow up Instructions
 3. Paste https://github.com/starlightboosting/tradelog/releases
 4. Click import.
 5. Click install.
-
+6. Once installed open a trade window and click Notify on the bottom left of the trade window.
+ 
 Ingame command 
 /TradeLog Icon - turns radial buttion on/off
 
