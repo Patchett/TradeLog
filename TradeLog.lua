@@ -41,6 +41,11 @@ end
 
 function TradeLog_OnLoad(self)
 
+	local menu = CreateFrame("Frame", "TBT_AnnounceChannelDropDown", TradeFrame, "UIDropDownMenuTemplate");
+	menu:SetPoint("BOTTOMLEFT", "TradeFrame", "BOTTOMLEFT", 80, 0);
+	UIDropDownMenu_SetWidth(TBT_AnnounceChannelDropDown, 62, 3);
+    TBT_AnnounceChannelDropDown:SetScript("OnShow", function(self) self:SetFrameLevel(TradeFrame:GetFrameLevel()) end)
+
 	local cb = CreateFrame("CheckButton", "TBT_AnnounceCB", TradeFrame, "OptionsCheckButtonTemplate");
 	cb:SetPoint("BOTTOMLEFT", "TradeFrame", "BOTTOMLEFT", 10, 5);
 	cb:SetWidth(20);
@@ -102,7 +107,10 @@ function TradeLog_OnEvent(self, event, arg1, arg2, ...)
 			v.id = v.id or k 
 		end
 
-		TradeLog_AnnounceChannel = "WHISPER";
+		TradeLog_AnnounceChannel = TradeLog_AnnounceChannel or "WHISPER";
+
+		UIDropDownMenu_Initialize(TBT_AnnounceChannelDropDown, TBT_AnnounceChannelDropDown_Initialize);
+		UIDropDownMenu_SetSelectedValue(TBT_AnnounceChannelDropDown, TradeLog_AnnounceChannel);
 
 		if(TradeLog_Announce_Checked) then TBT_AnnounceCB:SetChecked(1); end;
 
@@ -268,13 +276,14 @@ function TradeLog_Output(trade, func, plain)
 				local breaked = false
 				local first = true
 				local msg = string.gsub(TRADE_LOG_SUCCESS, "%%t", whoLink);
+				local msg = msg.. " "
 				if(#playerList > 0) then
-					msg = msg.."("..TRADE_LOG_HANDOUT..")"
+					msg = msg .." ("..TRADE_LOG_HANDOUT..") "
 					for _, v in pairs(playerList) do
 						if(strlen(msg..v) > 255) then
 							breaked = true;
 							func(msg)
-							msg = "("..TRADE_LOG_HANDOUT..")"..v
+							msg = " ("..TRADE_LOG_HANDOUT..") "..v
 							first = false
 						else
 							if(not first) then msg = msg.."," end
@@ -288,14 +297,14 @@ function TradeLog_Output(trade, func, plain)
 				if(#targetList > 0) then
 					if(breaked) then 
 						func(msg)
-						msg = "("..TRADE_LOG_RECEIVE..")"
+						msg = " ("..TRADE_LOG_RECEIVE..") "
 					else
-						msg = msg.." ("..TRADE_LOG_RECEIVE..")"
+						msg = msg.." ("..TRADE_LOG_RECEIVE..") "
 					end
 					for _, v in pairs(targetList) do
 						if(strlen(msg..v) > 255) then
 							func(msg)
-							msg = "("..TRADE_LOG_RECEIVE..")"..v
+							msg = " ("..TRADE_LOG_RECEIVE..") "..v
 							first = false
 						else
 							if(not first) then msg = msg.."," end
@@ -311,10 +320,10 @@ function TradeLog_Output(trade, func, plain)
 				local detailString = TradeLogFrame and ("|CFF00B4FF|Htradelog:".. curr().id .."|h["..TRADE_LOG_DETAIL.."]|h|r") or TRADE_LOG_DETAIL;
 				func(string.gsub(TRADE_LOG_SUCCESS, "%%t", whoLink)..detailString..":", 1, 1, 0);
 				if(#playerList>0) then
-					func("("..TRADE_LOG_HANDOUT..") "..table.concat(playerList, ","), 1, 0.8, 0.8);
+					func(" ("..TRADE_LOG_HANDOUT..") "..table.concat(playerList, ","), 1, 0.8, 0.8);
 				end
 				if(#targetList>0) then
-					func("("..TRADE_LOG_RECEIVE..") "..table.concat(targetList, ","), 0.8, 1, 0.8);
+					func(" ("..TRADE_LOG_RECEIVE..") "..table.concat(targetList, ","), 0.8, 1, 0.8);
 				end
 			end
 		end
@@ -348,7 +357,7 @@ function TradeLog_OutputLog()
 	table.insert(TradeLog_TradesHistory, curr());
 	if(type(TradeListScrollFrame_Update)=="function") then TradeListScrollFrame_Update(); end
 
-	TradeLog_Output(curr(), function(m, r, g, b) DEFAULT_CHAT_FRAME:AddMessage(m, r, g, b) end);
+	-- TradeLog_Output(curr(), function(m, r, g, b) DEFAULT_CHAT_FRAME:AddMessage(m, r, g, b) end);
 	if(TBT_AnnounceCB:GetChecked()) then
 		TradeLog_Output(curr(), function(m) SendChat(m, curr().who) end, true);
 	end

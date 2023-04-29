@@ -59,7 +59,7 @@
 	<Frame name="RecentTradeFrame" parent="TradeFrame" inherits="UIPanelDialogTemplate" hidden="false">
 		<TitleRegion setAllPoints="true"/>
 		<Size>
-			<AbsDimension x="180" y="451"/>
+			<AbsDimension x="225" y="451"/>
 		</Size>
 		<Anchors>
 			<Anchor point="TOPLEFT" relativePoint="TOPRIGHT">
