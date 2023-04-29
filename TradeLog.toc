@@ -1,10 +1,9 @@
-﻿## Interface: 90100
-## Author: Starlight Boosting Dev Team, [Dev] Gingertwirl
+﻿## Interface: 11305
+## Author: Starlight Boosting Dev Team, [Dev] Gingertwirl, Adapted for Classic Era by Hyperko on Whitemane
 ## Version: 1.1.1
 ## Title: TradeLog
-## Notes: Trade history log, Recent trade list for Starlight Boosting advertisers
+## Notes: Trade history log
 ## SavedVariablesPerCharacter: TradeLog_TradesHistory, TradeLog_Announce_Checked, TradeLog_AnnounceChannel
-## X-Website: Discord.gg/SLB
 ## LoadOnDemand: 0
 ## DefaultState: enabled
 
